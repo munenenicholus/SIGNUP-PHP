@@ -16,7 +16,7 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
 	$email = validate($_POST['email']);
 	$password = validate($_POST['password']);
 
-	if (empty($username) || empty($email) || empty($email)) {
+	if (empty($username) || empty($email) || empty($password)) {
 		header("Location: register.php");
 	}else {
 
